@@ -36,7 +36,8 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/your-username/fitness-recommendation-system.git
+git clone https://github.com/Parth04Dalvi/Personalized-Workout-Nutrition-Recommendation-System
+.git
 cd fitness-recommendation-system
 Create a virtual environment:
 It's highly recommended to use a virtual environment to manage dependencies.
