@@ -40,3 +40,18 @@ with app.app_context():
 
 if __name__ == '__main__':
     app.run(debug=True)
+class WorkoutLog(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    date = db.Column(db.Date, nullable=False, default=datetime.utcnow().date)
+    exercise_name = db.Column(db.String(100), nullable=False)
+    sets = db.Column(db.Integer)
+    reps = db.Column(db.Integer)
+    weight_kg = db.Column(db.Float)
+
+class BodyMetric(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    date = db.Column(db.Date, nullable=False, default=datetime.utcnow().date)
+    weight_kg = db.Column(db.Float, nullable=False)
+    body_fat_pct = db.Column(db.Float)
