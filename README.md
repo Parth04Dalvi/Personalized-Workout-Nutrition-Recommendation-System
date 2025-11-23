@@ -1,4 +1,4 @@
-Personalized Workout & Nutrition Recommendation System
+# Personalized Workout & Nutrition Recommendation System
 
 💡 About the Project
 This project is a Personalized Workout & Nutrition Recommendation System designed to help users achieve their fitness goals. By collecting key user data, such as age, weight, height, and fitness goals, the system generates customized workout routines and daily nutrition plans. The core of the application lies in its backend logic, which uses standard metabolic formulas to calculate calorie and macronutrient needs, then recommends an exercise and meal plan tailored to the individual
